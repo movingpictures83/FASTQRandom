@@ -1,0 +1,2 @@
+c	15
+fastq	S12_R1.fastq

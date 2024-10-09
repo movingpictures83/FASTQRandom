@@ -1,0 +1,27 @@
+Duplicate specification "append|A" for option "a"
+Option count requires an argument
+usage: /usr/share/bin/randomFQ (-c <count> | -p <pct>) [-fasta] [-out <prefix>] [-seed <int>] <input-fastq> [<input-2> [<index-3>] ]
+
+Returns <count> number of random entries from the input fastq.
+
+Output is fastq, unless you specify -fasta
+
+If the -out parameter ends in .gz, the result is gzipped in-place.
+
+-p returns a % of total reads, -c returns a fixed count.
+
+SINGLE END:
+
+Outputs to standard output, unless -out <file> is specified.   
+
+PAIRED END:
+
+Pass 2 (or 3) files as input, -out is required.
+
+If the paired-end output contains a "%" sign, it is replaced with the 1 & 2 for paired-end.
+
+IE: -o output_%.fastq.gz
+
+Otherwise it's jsut output_1 and output_2
+
+*** If one file is an indexed read, it has to be the 3rd file (for now).

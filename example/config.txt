@@ -1,0 +1,2 @@
+Prefix plugins/FASTQRandom/example/
+Plugin FASTQRandom inputfile parameters.txt outputfile random.fastq
